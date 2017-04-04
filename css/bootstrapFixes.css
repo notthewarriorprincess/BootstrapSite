@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+body{
+	background-color:#DFE5EB;
+}
 .navbar-default{
 	background-color: #3B7FFF;
 }
