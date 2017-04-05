@@ -9,21 +9,26 @@
 <style>
 	.storeItem{
 		width: 70%;
+		height: 170px;
 		padding: 20px;
+		padding-bottom: 20px;
 		margin:auto;
 	}
 	.storeList{
 		list-style-type: none;
 	}
 	#itemImg{
-		height: 150px;
+		width: 150px;
 		float: left;
+		padding-right: 10px;
+		
 	}
 	#itemTitle{
 		padding: 2px 5px;
+		margin-right: auto;
 	}
 	#itemDesc{
-		
+		padding: 0px 5px 2px;
 	}
 </style>
 </head>
@@ -84,6 +89,13 @@
 				we steal your shoes so you don't have to!</p>
 			</div>
 		</li>
+		<li>
+			<div class="storeItem">
+				<img src="images/vista.jpg" id="itemImg"/>
+				<h4 id="itemTitle">Vista</h4>
+				<p id="itemDesc">Yeah, I got nothing. It sucks.</p>
+			</div>
+		</li>
 	</ul>
 </div>
 
@@ -108,4 +120,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/bootstrapCustom.js"></script>
 </html>
