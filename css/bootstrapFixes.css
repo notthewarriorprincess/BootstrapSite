@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*ALL PAGES*/
 body{
 	background-color:#DFE5EB;
 }
@@ -38,4 +40,64 @@ body{
   color: blue;
   background-color: blue;
   border-color: blue;
+}
+
+/*STORE*/
+.storeItem{
+	width: 70%;
+	height: 170px;
+	padding: 20px;
+	padding-bottom: 20px;
+	margin:auto;
+}
+.storeList{
+	list-style-type: none;
+}
+#itemImg{
+	width: 150px;
+	float: left;
+	padding-right: 10px;
+
+}
+#itemTitle{
+	padding: 2px 5px;
+	margin-right: auto;
+}
+#itemDesc{
+	padding: 0px 5px 2px;
+}
+
+/*ABOUT*/
+#about-heading{
+	float:none;
+	text-align: center;
+	padding: 50px 10px;
+	background-color: #D57BE0;
+	margin: 0px 7%;
+}	
+#about-center{
+	text-align: center;
+	float: none;
+	padding: 20px;
+}
+.about-imgs{
+	float: left;
+	width: 175px;
+	padding-right: 7px;
+}
+#about-left{
+	background-color: #EFBCF5;
+	float: left;
+	padding:15px;
+	margin:10px 1%;
+	/*margin-left: 1%;*/
+	width:48%;
+}
+#about-right{
+	background-color: #EFBCF5;
+	float: right;
+	padding:15px;
+	margin: 10px 1%;
+	/*margin-right: 1%;*/
+	width: 48%;
 }
