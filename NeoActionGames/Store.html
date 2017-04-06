@@ -7,7 +7,11 @@
 <title>Curious Store</title>
 
 <style>
-	
+#itemImg2{
+	width: 150px;
+	float: left;
+	padding-right: 10px;
+}
 </style>
 </head>
 
@@ -17,12 +21,6 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="index.html"  style="color:lightgreen;">Curious Constructions</a>
     </div>
 
@@ -55,7 +53,7 @@
 <div>
 	<ul class="storeList">
 		<li>
-			<div class="storeItem">
+			<div class="storeItem" id="shoes" onClick="itemSelected('itemImg')">
 				
 				<img src="images/shoes.jpg" id="itemImg"/>
 				
@@ -68,8 +66,8 @@
 			</div>
 		</li>
 		<li>
-			<div class="storeItem">
-				<img src="images/vista.jpg" id="itemImg"/>
+			<div class="storeItem" id="vista" onClick="itemSelected('itemImg2')">
+				<img src="images/vista.jpg" id="itemImg2"/>
 				<h4 id="itemTitle">Vista</h4>
 				<p id="itemDesc">Yeah, I got nothing. It sucks.</p>
 			</div>
@@ -98,5 +96,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
 <script src="../js/bootstrapCustom.js"></script>
 </html>
