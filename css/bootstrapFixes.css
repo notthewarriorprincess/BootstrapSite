@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+@font-face{
+	font-family:Minniature;
+	src: url("../fonts/Minniature.ttf")
+		format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
 /* CSS Document */
 
 /*ALL PAGES*/
