@@ -108,6 +108,10 @@ body{
 .storeList{
 	list-style-type: none;
 }
+.storeBtn{
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
 .itemImg{
 	height: 100%;
 	float: left;
@@ -122,9 +126,10 @@ body{
 	padding: 0px 5px 2px;
 }
 .optImg{
-	height: 40px;
+	height: 60px;
 }
 .buyOptions{
+	display: none;
 }
 
 /*ABOUT*/

@@ -14,22 +14,21 @@ function iClick(){
 	}
 });*/
 
-window.onload = function(){
-	$('.buyOptions').hide();
-};
-
 function itemSelected(cont, opt, div){
-	var itemCont = cont;
-	var itemOpt = opt;
 	var itemdiv = document.getElementById(div);
 	if (itemdiv.style.height != '360px'){
 		
-		enlarge(itemCont, itemOpt, itemdiv);
+		enlarge(cont, opt, itemdiv);
 		
 	}else{
 		
-		shrink(itemCont, itemOpt, itemdiv);
-		
+	}
+}
+
+function itemMinimize(cont, opt, div){
+	var itemdiv = document.getElementById(div);
+	if (itemdiv.style.height == '360px'){
+		shrink(cont, opt, itemdiv);
 	}
 }
 
