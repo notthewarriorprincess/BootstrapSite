@@ -7,9 +7,7 @@
 <title>Curious Store</title>
 
 <style>
-	.itemImg{
-		height: 100%;
-	}
+	
 </style>
 </head>
 
@@ -50,7 +48,7 @@
 <div>
 	<ul class="storeList">
 		<li>
-			<div class="storeItem" id="shoes" onClick="itemSelected('shoesImg', this.id)">
+			<div class="storeItem" id="shoes" onClick="itemSelected('shoesContent', 'shoesOptions', this.id)">
 				
 					<img src="images/shoes.jpg" class="itemImg" id="shoesImg"/>
 					<div class="itemContent" id="shoesContent">
@@ -61,15 +59,42 @@
 						us in to the police! (With the addition of a meager service fee.) Remember, 
 						we steal your shoes so you don't have to!</p>
 					</div>
+					<div class="buyOptions" id="shoesOptions">
+						<a href="https://www.amazon.com/">
+							<img src="images/amazon.png" class="optImg"/>
+						</a>
+						
+						<a href="https://store.steampowered.com/">
+							<img src="images/steam.png" class="optImg"/>
+						</a>
+						
+						<a href="https://www.gog.com/">
+							<img src="images/gog.png" class="optImg"/>
+						</a>
+					</div>
 			</div>
 		</li>
 		<li>
-			<div class="storeItem" id="vista" onClick="itemSelected('vistaImg', this.id)">
+			<div class="storeItem" id="vista" onClick="itemSelected('vistaContent', 'vistaOptions', this.id)">
 				
 					<img src="images/vista.jpg" class="itemImg" id="vistaImg"/>
 					<div class="itemContent" id="vistaContent">
 						<h4 class="itemTitle">Vista</h4>
 						<p class="itemDesc">Yeah, I got nothing. It sucks.</p>
+					</div>
+					<div class="buyOptions" id="vistaOptions">
+						<a href="https://www.amazon.com/">
+							<img src="images/amazon.png"
+							class="optImg"/>
+						</a>
+						
+						<a href="https://store.steampowered.com/">
+							<img src="images/steam.png" class="optImg"/>
+						</a>
+						
+						<a href="https://www.gog.com/">
+							<img src="images/gog.png" class="optImg"/>
+						</a>
 					</div>
 			</div>
 		</li>
