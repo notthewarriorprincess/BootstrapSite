@@ -190,3 +190,33 @@ article p {
 	border-color:lightskyblue;
 	margin: auto 20% 15px;
 }
+
+/*http://ianlunn.github.io/Hover/
+This is the link to the Hover.css webpage. Just in case we need to reference back to it at some point*/
+
+/* Fade */
+.hvr-fade {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	overflow: hidden;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+
+
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+	/*background-color: black;*/
+	color: white;
+	/*-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;*/
+	transition: all 0.5s ease-in-out;
+	background-color: rgba(0,0,0,0.75);
+	opacity: 0.5;
+}
