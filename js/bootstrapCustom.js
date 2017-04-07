@@ -18,44 +18,38 @@ function iClick(){
 function itemSelected(id, div){
 	var item = document.getElementById(id);
 	var itemdiv = document.getElementById(div);
-	if (item.style.width < '250px'){
+	if (itemdiv.style.height != '360px'){
+		
 		enlarge(item, itemdiv);
-		itemdiv.style.height = '270px';
 		
 	}else{
+		
 		shrink(item, itemdiv);
 		
-		itemdiv.style.height = '170px';
 	}
 }
 
 function enlarge(item, itemdiv){
-	var w = 150;
 	var h = 170;
 	var id = setInterval(frame, 1);
 	function frame(){
-		if(w == 250){
+		if(h == 360){
 			clearInterval(id);
 		} else {
-			w++;
 			h++;
-			item.style.width = w + 'px';
 			itemdiv.style.height = h + 'px';
 		}
 	}
 }
 
 function shrink(item, itemdiv){
-	var w = 250;
-	var h = 270;
+	var h = 360;
 	var id = setInterval(frame, 1);
 	function frame(){
-		if(w == 150){
+		if(h == 170){
 			clearInterval(id);
 		} else {
-			w--;
 			h--;
-			item.style.width = w + 'px';
 			itemdiv.style.height = h + 'px';
 		}
 	}

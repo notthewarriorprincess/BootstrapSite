@@ -7,7 +7,9 @@
 <title>Curious Store</title>
 
 <style>
-
+	.itemImg{
+		height: 100%;
+	}
 </style>
 </head>
 
@@ -49,22 +51,25 @@
 	<ul class="storeList">
 		<li>
 			<div class="storeItem" id="shoes" onClick="itemSelected('shoesImg', this.id)">
-				
-				<img src="images/shoes.jpg" class="itemImg" id="shoesImg"/>
-				
-				<h4 class="itemTitle">Kriminal Kicks</h4>
-				<p class="itemDesc">Come one, come all! Feast your eyes on the latest trend in shoe wear!
-				Stolen shoes!!! That's right guys, gals, and guesses, for a limited amount
-				of time these thefty kicks can be yours for a low, low price of not turning
-				us in to the police! (With the addition of a meager service fee.) Remember, 
-				we steal your shoes so you don't have to!</p>
+				<div class="storeItem" id="shoesContent">
+					<img src="images/shoes.jpg" class="itemImg" id="shoesImg"/>
+
+					<h4 class="itemTitle">Kriminal Kicks</h4>
+					<p class="itemDesc">Come one, come all! Feast your eyes on the latest trend in shoe wear!
+					Stolen shoes!!! That's right guys, gals, and guesses, for a limited amount
+					of time these thefty kicks can be yours for a low, low price of not turning
+					us in to the police! (With the addition of a meager service fee.) Remember, 
+					we steal your shoes so you don't have to!</p>
+				</div>
 			</div>
 		</li>
 		<li>
 			<div class="storeItem" id="vista" onClick="itemSelected('vistaImg', this.id)">
-				<img src="images/vista.jpg" class="itemImg" id="vistaImg"/>
-				<h4 class="itemTitle">Vista</h4>
-				<p class="itemDesc">Yeah, I got nothing. It sucks.</p>
+				<div class="itemContent" id="vistaContent">
+					<img src="images/vista.jpg" class="itemImg" id="vistaImg"/>
+					<h4 class="itemTitle">Vista</h4>
+					<p class="itemDesc">Yeah, I got nothing. It sucks.</p>
+				</div>
 			</div>
 		</li>
 	</ul>
