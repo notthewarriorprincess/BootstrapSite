@@ -33,7 +33,6 @@
           <ul class="dropdown-menu">
             <li><a href="FinishedProjects.html">Finished Projects</a></li>
             <li><a href="CurrentProjects.html">Current Projects</a></li>
-            <li><a href="#">Future Projects</a></li>
           </ul>
         </li>
       </ul>
@@ -53,7 +52,7 @@
 <div>
 	<ul class="storeList">
 		<li>
-			<div class="storeItem" id="shoes" onClick="itemSelected('itemImg')">
+			<div class="storeItem" id="shoes" onClick="itemSelected('itemImg', this.id)">
 				
 				<img src="images/shoes.jpg" id="itemImg"/>
 				
@@ -66,7 +65,7 @@
 			</div>
 		</li>
 		<li>
-			<div class="storeItem" id="vista" onClick="itemSelected('itemImg2')">
+			<div class="storeItem" id="vista" onClick="itemSelected('itemImg2', this.id)">
 				<img src="images/vista.jpg" id="itemImg2"/>
 				<h4 id="itemTitle">Vista</h4>
 				<p id="itemDesc">Yeah, I got nothing. It sucks.</p>

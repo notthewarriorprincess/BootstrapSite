@@ -14,14 +14,49 @@ function iClick(){
 	}
 });*/
 
-function itemSelected(id){
+
+function itemSelected(id, div){
 	var item = document.getElementById(id);
-	var itemdiv = document.getElementById('shoes').style.height = '250px';
-	if (item.style.width != '250px'){
-		item.style.width = '250px';
+	var itemdiv = document.getElementById(div);
+	if (item.style.width < '250px'){
+		enlarge(item, itemdiv);
 		itemdiv.style.height = '270px';
+		
 	}else{
-		item.style.width = '150px';
+		shrink(item, itemdiv);
+		
 		itemdiv.style.height = '170px';
+	}
+}
+
+function enlarge(item, itemdiv){
+	var w = 150;
+	var h = 170;
+	var id = setInterval(frame, 1);
+	function frame(){
+		if(w == 250){
+			clearInterval(id);
+		} else {
+			w++;
+			h++;
+			item.style.width = w + 'px';
+			itemdiv.style.height = h + 'px';
+		}
+	}
+}
+
+function shrink(item, itemdiv){
+	var w = 250;
+	var h = 270;
+	var id = setInterval(frame, 1);
+	function frame(){
+		if(w == 150){
+			clearInterval(id);
+		} else {
+			w--;
+			h--;
+			item.style.width = w + 'px';
+			itemdiv.style.height = h + 'px';
+		}
 	}
 }
