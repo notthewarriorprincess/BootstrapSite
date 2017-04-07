@@ -7,11 +7,7 @@
 <title>Curious Store</title>
 
 <style>
-#itemImg2{
-	width: 150px;
-	float: left;
-	padding-right: 10px;
-}
+
 </style>
 </head>
 
@@ -52,12 +48,12 @@
 <div>
 	<ul class="storeList">
 		<li>
-			<div class="storeItem" id="shoes" onClick="itemSelected('itemImg', this.id)">
+			<div class="storeItem" id="shoes" onClick="itemSelected('shoesImg', this.id)">
 				
-				<img src="images/shoes.jpg" id="itemImg"/>
+				<img src="images/shoes.jpg" class="itemImg" id="shoesImg"/>
 				
-				<h4 id="itemTitle">Kriminal Kicks</h4>
-				<p id="itemDesc">Come one, come all! Feast your eyes on the latest trend in shoe wear!
+				<h4 class="itemTitle">Kriminal Kicks</h4>
+				<p class="itemDesc">Come one, come all! Feast your eyes on the latest trend in shoe wear!
 				Stolen shoes!!! That's right guys, gals, and guesses, for a limited amount
 				of time these thefty kicks can be yours for a low, low price of not turning
 				us in to the police! (With the addition of a meager service fee.) Remember, 
@@ -65,10 +61,10 @@
 			</div>
 		</li>
 		<li>
-			<div class="storeItem" id="vista" onClick="itemSelected('itemImg2', this.id)">
-				<img src="images/vista.jpg" id="itemImg2"/>
-				<h4 id="itemTitle">Vista</h4>
-				<p id="itemDesc">Yeah, I got nothing. It sucks.</p>
+			<div class="storeItem" id="vista" onClick="itemSelected('vistaImg', this.id)">
+				<img src="images/vista.jpg" class="itemImg" id="vistaImg"/>
+				<h4 class="itemTitle">Vista</h4>
+				<p class="itemDesc">Yeah, I got nothing. It sucks.</p>
 			</div>
 		</li>
 	</ul>
@@ -95,6 +91,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
 <script src="../js/bootstrapCustom.js"></script>
 </html>
