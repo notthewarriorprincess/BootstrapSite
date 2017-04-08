@@ -10,6 +10,9 @@
 /* CSS Document */
 
 /*ALL PAGES*/
+.row{
+	margin-bottom: 10px;
+}
 .container{
 	padding: 5px;
 	align-content: center;
