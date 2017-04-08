@@ -32,12 +32,7 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Store.html" style="color:lightgreen;">Store</a></li>
       </ul>
@@ -47,8 +42,28 @@
 <!-- END NAVBAR -->
 
 <!--SIDEBAR-->
-<div>
-	
+<div class="sidebar">
+	<ul class="storeList">
+	<h2>Store</h2>
+		<li>
+			<form class="navbar-form navbar-left">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+		</li>
+
+		 <li>
+		  <button>filter</button>
+		  <br />
+		  <button>stuff</button>
+		  <br />
+		  <button>filler</button>
+		  <br />
+		  <button>afsdooiag</button>
+		 </li>
+	 </ul>
 </div>
 <!--END SIDEBAR-->
 
@@ -86,6 +101,7 @@
 						
 						
 					</div>
+					
 			</div>
 		</li>
 		<li>
@@ -119,6 +135,99 @@
 					</div>
 			</div>
 		</li>
+		<li>
+			<div class="storeItem" id="ego" onClick="itemSelected('egoContent', 'egoOptions', this.id)">
+				
+					<img src="images/ego.jpg" class="itemImg" onClick="itemMinimize('egoContent', 'egoOptions', 'ego')"/>
+					<div class="itemContent" id="egoContent">
+						<h4 class="itemTitle">Ego Waffles</h4>
+						<p class="itemDesc">They're too good for you to eat!</p>
+					</div>
+					<div class="buyOptions" id="egoOptions">
+						<h2>Ego Waffles</h2>
+						<h4>$6.66</h4>
+						<button class="storeBtn">Buy Now</button>
+						<button class="storeBtn">Add to Cart</button>
+						<br />
+						<a href="https://www.amazon.com/" target = "_blank">
+							<img src="images/amazon.png" class="optImg"/>
+						</a>
+						
+						<a href="https://www.gog.com/" target = "_blank">
+							<img src="images/gog.png" class="optImg"/>
+						</a>
+						
+						<a href="https://store.steampowered.com/" target = "_blank">
+							<img src="images/steam.png" class="optImg"/>
+						</a>
+						
+						
+					</div>
+					
+			</div>
+		</li>
+		<li>
+			<div class="storeItem" id="const" onClick="itemSelected('constContent', 'constOptions', this.id)">
+				
+					<img src="images/Constellations-bg.png" class="itemImg" onClick="itemMinimize('constContent', 'constOptions', 'const')"/>
+					<div class="itemContent" id="constContent">
+						<h4 class="itemTitle">Constellations</h4>
+						<p class="itemDesc">The best educational resource you will ever purchase. Fun for the whole family?! Be bedazzled by the hyper-detailed, professional graphic design featured on each card! You and your family will be engrossed for hours in this incredibly complex resource collection and management game for young ones!</p>
+					</div>
+					<div class="buyOptions" id="constOptions">
+						<h2>Constellations</h2>
+						<h4>$Priceless</h4>
+						<button class="storeBtn">Buy Now</button>
+						<button class="storeBtn">Add to Cart</button>
+						<br />
+						<a href="https://www.amazon.com/" target = "_blank">
+							<img src="images/amazon.png" class="optImg"/>
+						</a>
+						
+						<a href="https://www.gog.com/" target = "_blank">
+							<img src="images/gog.png" class="optImg"/>
+						</a>
+						
+						<a href="https://store.steampowered.com/" target = "_blank">
+							<img src="images/steam.png" class="optImg"/>
+						</a>
+						
+						
+					</div>
+					
+			</div>
+		</li>
+		<li>
+			<div class="storeItem" id="wass" onClick="itemSelected('wassContent', 'wassOptions', this.id)">
+				
+					<img src="images/yrb.jpg" class="itemImg" onClick="itemMinimize('wassContent', 'wassOptions', 'wass')"/>
+					<div class="itemContent" id="wassContent">
+						<h4 class="itemTitle">Wassily</h4>
+						<p class="itemDesc">The award winning, expertly made project of two college geniuses who were so generous as to let the whole world experience this flawless masterpiece for a super low price.</p>
+					</div>
+					<div class="buyOptions" id="wassOptions">
+						<h2>Wassily</h2>
+						<h4>$2499.11</h4>
+						<button class="storeBtn">Buy Now</button>
+						<button class="storeBtn">Add to Cart</button>
+						<br />
+						<a href="https://www.amazon.com/" target = "_blank">
+							<img src="images/amazon.png" class="optImg"/>
+						</a>
+						
+						<a href="https://www.gog.com/" target = "_blank">
+							<img src="images/gog.png" class="optImg"/>
+						</a>
+						
+						<a href="https://store.steampowered.com/" target = "_blank">
+							<img src="images/steam.png" class="optImg"/>
+						</a>
+						
+						
+					</div>
+					
+			</div>
+		</li>
 	</ul>
 </div>
 
@@ -126,14 +235,14 @@
 <footer class="footer">
 		<div class ="container">
 			<span class="text-muted">&copy; 2017 Curious Constructions</span>
-           <a class="social" href="https://www.youtube.com/">
+           <a class="social" href="https://www.youtube.com/" target="_blank">
                 <img src="images/youtube.png" alt="YouTube Link" />
             </a>
             
-            <a class="social" href="https://www.twitter.com/">
+            <a class="social" href="https://www.twitter.com/" target="_blank">
                 <img src="images/twitter.png" alt="Twitter Link" />
             </a>
-            <a class="social" href="https://www.facebook.com/">
+            <a class="social" href="https://www.facebook.com/" target="_blank">
                 <img src="images/facebook.png" alt="Facebook Link" />
             </a>
 		</div>
