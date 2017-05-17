@@ -152,9 +152,10 @@ body{
 	float:none;
 	text-align: center;
 	padding: 50px 10px;
-	background-color: #D57BE0;
+	background-color: #7BB9E0;
+	/*background-color: #D57BE0;*/
 	margin: 0px 7%;
-}	
+}
 #about-center{
 	text-align: center;
 	float: none;
@@ -166,7 +167,8 @@ body{
 	padding-right: 7px;
 }
 #about-left{
-	background-color: #EFBCF5;
+	background-color: #7BB9E0;
+	/*background-color: #EFBCF5; */
 	float: left;
 	padding:15px;
 	margin:10px 1% 75px;
@@ -174,7 +176,7 @@ body{
 	width:48%;
 }
 #about-right{
-	background-color: #EFBCF5;
+	background-color: #7BB9E0;
 	float: right;
 	padding:15px;
 	margin: 10px 1% 75px;
@@ -185,7 +187,8 @@ body{
 	clear:both;
 	text-align: center;
 	padding: 10px;
-	background-color: #D57BE0;
+	background-color: #7BB9E0;
+	/*background-color: #D57BE0; */
 	margin: 0px 7%;
 }
 
