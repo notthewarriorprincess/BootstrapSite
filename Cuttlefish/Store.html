@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/bootstrapFixes.css">
-<title>Curious Store</title>
+<link rel="icon" href="cuttleeye.ico">
+<title>Cuttlefish Store</title>
 
 <style>
-	
+
 </style>
 </head>
 
@@ -17,22 +18,20 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html"  style="color:lightgreen;">Curious Constructions</a>
+			<a class="navbar-brand" href="index.html"  style="color:lightgreen;">
+				<img src="images/cuttlefish5.png" id="logo" alt="cuttle logo"/>
+				Cuttlefish Entertainment
+			</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="About.html" style="color:lightgreen;">About <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:lightgreen;">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="FinishedProjects.html">Finished Projects</a></li>
-            <li><a href="CurrentProjects.html">Current Projects</a></li>
-          </ul>
-        </li>
+				<li><a href="FinishedProjects.html" style="color:lightgreen;">Finished Projects</a></li>
+				<li><a href="CurrentProjects.html" style="color:lightgreen;">Current Projects</a></li>
       </ul>
-      
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Store.html" style="color:lightgreen;">Store</a></li>
       </ul>
@@ -71,42 +70,52 @@
 	<ul class="storeList">
 		<li>
 			<div class="storeItem" id="shoes" onClick="itemSelected('shoesContent', 'shoesOptions', this.id)">
-				
+
 					<img src="images/shoes.jpg" class="itemImg" id="shoesImg" onClick="itemMinimize('shoesContent', 'shoesOptions', 'shoes')"/>
 					<div class="itemContent" id="shoesContent">
 						<h4 class="itemTitle">Kriminal Kicks</h4>
 						<p class="itemDesc">Come one, come all! Feast your eyes on the latest trend in shoe wear!
 						Stolen shoes!!! That's right guys, gals, and guesses, for a limited amount
 						of time these thefty kicks can be yours for a low, low price of not turning
-						us in to the police! (With the addition of a meager service fee.) Remember, 
+						us in to the police! (With the addition of a meager service fee.) Remember,
 						we steal your shoes so you don't have to!</p>
 					</div>
 					<div class="buyOptions" id="shoesOptions">
 						<h2>Kriminal Kicks</h2>
 						<h4>$24.99</h4>
-						<button class="storeBtn">Buy Now</button>
-						<button class="storeBtn">Add to Cart</button>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NX4CA4LX26XFG">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="23G6KC8QC9GDL">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<br />
 						<br />
 						<a href="https://www.amazon.com/" target = "_blank">
 							<img src="images/amazon.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://www.gog.com/" target = "_blank">
 							<img src="images/gog.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://store.steampowered.com/" target = "_blank">
 							<img src="images/steam.png" class="optImg"/>
 						</a>
-						
-						
+
 					</div>
-					
+
 			</div>
 		</li>
 		<li>
 			<div class="storeItem" id="vista" onClick="itemSelected('vistaContent', 'vistaOptions', this.id)">
-				
+
 					<img src="images/vista.jpg" class="itemImg" id="vistaImg" onClick="itemMinimize('vistaContent', 'vistaOptions', 'vista')"/>
 					<div class="itemContent" id="vistaContent">
 						<h4 class="itemTitle">Vista</h4>
@@ -115,29 +124,39 @@
 					<div class="buyOptions" id="vistaOptions">
 						<h2>Windows Vista</h2>
 						<h4>$249.99</h4>
-						<button class="storeBtn">Buy Now</button>
-						<button class="storeBtn">Add to Cart</button>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NX4CA4LX26XFG">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="23G6KC8QC9GDL">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<br />
 						<br />
 						<a href="https://www.amazon.com/" target = "_blank">
 							<img src="images/amazon.png"
 							class="optImg"/>
 						</a>
-						
+
 						<a href="https://www.gog.com/" target = "_blank">
 							<img src="images/gog.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://store.steampowered.com/" target = "_blank">
 							<img src="images/steam.png" class="optImg"/>
 						</a>
-						
-						
+
 					</div>
 			</div>
 		</li>
 		<li>
 			<div class="storeItem" id="ego" onClick="itemSelected('egoContent', 'egoOptions', this.id)">
-				
+
 					<img src="images/ego.jpg" class="itemImg" onClick="itemMinimize('egoContent', 'egoOptions', 'ego')"/>
 					<div class="itemContent" id="egoContent">
 						<h4 class="itemTitle">Ego Waffles</h4>
@@ -146,29 +165,39 @@
 					<div class="buyOptions" id="egoOptions">
 						<h2>Ego Waffles</h2>
 						<h4>$6.66</h4>
-						<button class="storeBtn">Buy Now</button>
-						<button class="storeBtn">Add to Cart</button>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NX4CA4LX26XFG">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="23G6KC8QC9GDL">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<br />
 						<br />
 						<a href="https://www.amazon.com/" target = "_blank">
 							<img src="images/amazon.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://www.gog.com/" target = "_blank">
 							<img src="images/gog.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://store.steampowered.com/" target = "_blank">
 							<img src="images/steam.png" class="optImg"/>
 						</a>
-						
-						
+
 					</div>
-					
+
 			</div>
 		</li>
 		<li>
 			<div class="storeItem" id="const" onClick="itemSelected('constContent', 'constOptions', this.id)">
-				
+
 					<img src="images/Constellations-bg.png" class="itemImg" onClick="itemMinimize('constContent', 'constOptions', 'const')"/>
 					<div class="itemContent" id="constContent">
 						<h4 class="itemTitle">Constellations</h4>
@@ -177,29 +206,39 @@
 					<div class="buyOptions" id="constOptions">
 						<h2>Constellations</h2>
 						<h4>$Priceless</h4>
-						<button class="storeBtn">Buy Now</button>
-						<button class="storeBtn">Add to Cart</button>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NX4CA4LX26XFG">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="23G6KC8QC9GDL">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<br />
 						<br />
 						<a href="https://www.amazon.com/" target = "_blank">
 							<img src="images/amazon.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://www.gog.com/" target = "_blank">
 							<img src="images/gog.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://store.steampowered.com/" target = "_blank">
 							<img src="images/steam.png" class="optImg"/>
 						</a>
-						
-						
+
 					</div>
-					
+
 			</div>
 		</li>
 		<li>
 			<div class="storeItem" id="wass" onClick="itemSelected('wassContent', 'wassOptions', this.id)">
-				
+
 					<img src="images/yrb.jpg" class="itemImg" onClick="itemMinimize('wassContent', 'wassOptions', 'wass')"/>
 					<div class="itemContent" id="wassContent">
 						<h4 class="itemTitle">Wassily</h4>
@@ -208,24 +247,34 @@
 					<div class="buyOptions" id="wassOptions">
 						<h2>Wassily</h2>
 						<h4>$2499.11</h4>
-						<button class="storeBtn">Buy Now</button>
-						<button class="storeBtn">Add to Cart</button>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="NX4CA4LX26XFG">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" class="storeBtn">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="23G6KC8QC9GDL">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						<br />
 						<br />
 						<a href="https://www.amazon.com/" target = "_blank">
 							<img src="images/amazon.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://www.gog.com/" target = "_blank">
 							<img src="images/gog.png" class="optImg"/>
 						</a>
-						
+
 						<a href="https://store.steampowered.com/" target = "_blank">
 							<img src="images/steam.png" class="optImg"/>
 						</a>
-						
-						
+
 					</div>
-					
+
 			</div>
 		</li>
 	</ul>
@@ -234,11 +283,11 @@
 <!-- FOOTER -->
 <footer class="footer">
 		<div class ="container">
-			<span class="text-muted">&copy; 2017 Curious Constructions</span>
+			<span class="text-muted">&copy; 2017 Cuttlefish Entertainment</span>
            <a class="social" href="https://www.youtube.com/" target="_blank">
                 <img src="images/youtube.png" alt="YouTube Link" />
             </a>
-            
+
             <a class="social" href="https://www.twitter.com/" target="_blank">
                 <img src="images/twitter.png" alt="Twitter Link" />
             </a>

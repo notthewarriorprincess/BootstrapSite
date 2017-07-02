@@ -84,6 +84,15 @@ body{
   border-color: blue;
 }
 
+#logo{
+	height: 150%;
+	float: left;
+	padding-right: 10px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 /*HOME PAGE*/
 .home-banner{
 	padding-top: 15px;
@@ -115,6 +124,7 @@ body{
 	overflow: hidden;
 }
 .storeBtn{
+	float: left;
 	margin-right: 5px;
 	margin-bottom: 10px;
 }
